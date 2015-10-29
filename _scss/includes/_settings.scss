@@ -1,0 +1,17 @@
+$font-stack: Calibri, sans-serif;
+
+/* Colors */
+
+$hippie-blue: #4f9eb2;
+$bondi-blue: #0090b4;
+$white: #fff;
+$ming: #3e7b8b;
+$sprindle: #c6e7ef;
+$powder_blue: #c0e3eb;
+$gallery: #eee;
+
+@mixin linear-gradient($direction, $color-stops...) {
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}
